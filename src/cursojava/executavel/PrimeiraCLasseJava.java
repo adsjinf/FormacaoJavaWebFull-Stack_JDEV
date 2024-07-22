@@ -15,14 +15,11 @@ public class PrimeiraCLasseJava {
 //        System.out.println("Importado..: " + carro.importado);
 //        System.out.println("Velocidade.: " + carro.velocidade);
 //        System.out.println("Valor......: " + carro.valor);
-//
-
 //        Aluno aluno1 = new Aluno();
 //        aluno1.nome = "João";
 //        aluno1.idade=50;
 //        System.out.println("Nome do aluno 1 é = " + aluno1.nome);
 //        System.out.println("Idade do aluno 1 é = " + aluno1.idade);
-
 //        Aluno aluno1 = new Aluno();
 //        aluno1.setNome("João da Silva");
 //        aluno1.setIdade(50);
