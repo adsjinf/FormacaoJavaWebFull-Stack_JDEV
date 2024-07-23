@@ -2,6 +2,8 @@ package cursojava.executavel;
 
 import cursojava.classes.Aluno;
 
+import javax.swing.*;
+
 public class PrimeiraCLasseJava {
     public static void main(String[] args) {
 //        Carro carro = new Carro();
@@ -21,21 +23,36 @@ public class PrimeiraCLasseJava {
 //        System.out.println("Nome do aluno 1 é = " + aluno1.nome);
 //        System.out.println("Idade do aluno 1 é = " + aluno1.idade);
 
+        String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do Aluno?");
+        int idadeAluno = Integer.parseInt(JOptionPane.showInputDialog("Qual o Idade?"));
+        String dataNascimentoAluno = JOptionPane.showInputDialog("Qual a Data de Nascimento?");
+        String registroGeralAluno = JOptionPane.showInputDialog("Qual o Registro Geral?");
+        String cpfAluno = JOptionPane.showInputDialog("Qual o CPF do Aluno?");
+        String nomeMaeAluno = JOptionPane.showInputDialog("Qual o Nome da Mãe?");
+        String nomePaiAluno = JOptionPane.showInputDialog("Qual o Nome do Pai?");
+        String dataMAtriculaAluno = JOptionPane.showInputDialog("Qual a Data da Matricula?");
+        String serieAluno = JOptionPane.showInputDialog("Qual a Serie?");
+        String nomeEscolaAluno = JOptionPane.showInputDialog("Qual o Nome da Escola?");
+        double nota1Aluno = Double.parseDouble(JOptionPane.showInputDialog("Qual a 1 Nota?"));
+        double nota2Aluno = Double.parseDouble(JOptionPane.showInputDialog("Qual a 2 Nota?"));
+        double nota3Aluno = Double.parseDouble(JOptionPane.showInputDialog("Qual a 3 Nota?"));
+        double nota4Aluno = Double.parseDouble(JOptionPane.showInputDialog("Qual a 4 Nota?"));
+
         Aluno aluno1 = new Aluno();
-        aluno1.setNome("João da Silva");
-        aluno1.setIdade(50);
-        aluno1.setDataNascimento("18/10/1987");
-        aluno1.setRegistroGeral("44554.4544.545");
-        aluno1.setNumeroCpf("54544.545454.5454");
-        aluno1.setNomeMae("Shirlei");
-        aluno1.setNomePai("Antonio");
-        aluno1.setDataMatricula("10/10/2017");
-        aluno1.setSerieMatriculado("5");
-        aluno1.setNomeEscola("Escola DEV treinamento");
-        aluno1.setNota1(90);
-        aluno1.setNota2(80.8);
-        aluno1.setNota3(70.9);
-        aluno1.setNota4(90.7);
+        aluno1.setNome(nomeAluno);
+        aluno1.setIdade(idadeAluno);
+        aluno1.setDataNascimento(dataNascimentoAluno);
+        aluno1.setRegistroGeral(registroGeralAluno);
+        aluno1.setNumeroCpf(cpfAluno);
+        aluno1.setNomeMae(nomeMaeAluno);
+        aluno1.setNomePai(nomePaiAluno);
+        aluno1.setDataMatricula(dataMAtriculaAluno);
+        aluno1.setSerieMatriculado(serieAluno);
+        aluno1.setNomeEscola(nomeEscolaAluno);
+        aluno1.setNota1(nota1Aluno);
+        aluno1.setNota2(nota2Aluno);
+        aluno1.setNota3(nota3Aluno);
+        aluno1.setNota4(nota4Aluno);
         System.out.println("Nome é = " + aluno1.getNome());
         System.out.println("Idade é = " + aluno1.getIdade());
         System.out.println("Nascimento é = " + aluno1.getDataNascimento());
