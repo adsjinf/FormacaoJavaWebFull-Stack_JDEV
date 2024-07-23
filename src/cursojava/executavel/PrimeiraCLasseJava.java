@@ -6,22 +6,7 @@ import javax.swing.*;
 
 public class PrimeiraCLasseJava {
     public static void main(String[] args) {
-//        Carro carro = new Carro();
-//        carro.cor = "Amarelo";
-//        carro.nome ="Merceder bens";
-//        carro.importado=false;
-//        carro.valor =230450.00;
-//        carro.velocidade=320;
-//        System.out.println("Nome.......: " + carro.nome);
-//        System.out.println("Cor........: " + carro.cor);
-//        System.out.println("Importado..: " + carro.importado);
-//        System.out.println("Velocidade.: " + carro.velocidade);
-//        System.out.println("Valor......: " + carro.valor);
-//        Aluno aluno1 = new Aluno();
-//        aluno1.nome = "João";
-//        aluno1.idade=50;
-//        System.out.println("Nome do aluno 1 é = " + aluno1.nome);
-//        System.out.println("Idade do aluno 1 é = " + aluno1.idade);
+
 
         String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do Aluno?");
         int idadeAluno = Integer.parseInt(JOptionPane.showInputDialog("Qual o Idade?"));
