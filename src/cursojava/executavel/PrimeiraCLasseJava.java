@@ -53,33 +53,18 @@ public class PrimeiraCLasseJava {
         aluno1.setDataMatricula(dataMAtriculaAluno);
         aluno1.setSerieMatriculado(serieAluno);
         aluno1.setNomeEscola(nomeEscolaAluno);
-        aluno1.setNota1(nota1Aluno);
-        aluno1.setNota2(nota2Aluno);
-        aluno1.setNota3(nota3Aluno);
-        aluno1.setNota4(nota4Aluno);
-        aluno1.setDisciplina1(nomeDisciplina1);
-        aluno1.setDisciplina2(nomeDisciplina2);
-        aluno1.setDisciplina3(nomeDisciplina3);
-        aluno1.setDisciplina4(nomeDisciplina4);
+        aluno1.getDisciplina().setNota1(nota1Aluno);
+        aluno1.getDisciplina().setNota2(nota2Aluno);
+        aluno1.getDisciplina().setNota3(nota3Aluno);
+        aluno1.getDisciplina().setNota4(nota4Aluno);
+        aluno1.getDisciplina().setDisciplina1(nomeDisciplina1);
+        aluno1.getDisciplina().setDisciplina2(nomeDisciplina2);
+        aluno1.getDisciplina().setDisciplina3(nomeDisciplina3);
+        aluno1.getDisciplina().setDisciplina4(nomeDisciplina4);
 
         System.out.println(aluno1.toString());
         System.out.println("Média do Aluno = " + aluno1.getMediaNota());
         System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
-
-        /* Equal e Hashcode (Diferenciar e comparar objetos) */
-//        Aluno aluno1 = new Aluno();
-//        aluno1.setNome("Alex");
-//        aluno1.setNumeroCpf("123");
-//
-//        Aluno aluno2 = new Aluno();
-//        aluno2.setNome("Alex");
-//        aluno2.setNumeroCpf("1234");
-//
-//        if (aluno1.equals(aluno2)) {
-//            System.out.println("Aluno são iguais");
-//        } else {
-//            System.out.println("Aluno não são iguais");
-//        }
 
     }
 }
