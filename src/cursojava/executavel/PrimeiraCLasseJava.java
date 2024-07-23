@@ -53,30 +53,8 @@ public class PrimeiraCLasseJava {
         aluno1.setNota2(nota2Aluno);
         aluno1.setNota3(nota3Aluno);
         aluno1.setNota4(nota4Aluno);
-        System.out.println("Nome é = " + aluno1.getNome());
-        System.out.println("Idade é = " + aluno1.getIdade());
-        System.out.println("Nascimento é = " + aluno1.getDataNascimento());
-        System.out.println("Média da nota é = " + aluno1.getMediaNota());
-        System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-        System.out.println("----------------------------------------------");
-
-        Aluno aluno2 = new Aluno();
-        aluno2.setNome("Pedro");
-        aluno2.setIdade(50);
-        aluno2.setNota1(80);
-        aluno2.setNota2(90.8);
-        aluno2.setNota3(60.9);
-        aluno2.setNota4(80.7);
-        aluno2.setDataNascimento("10/10/1970");
-        System.out.println("Aluno 2 Nome é = " + aluno2.getNome());
-        System.out.println("Aluno 2 Idade é = " + aluno2.getIdade());
-        System.out.println("Aluno 2 Nascimento é = " + aluno2.getDataNascimento());
-        System.out.println("Média da nota é = " + aluno2.getMediaNota());
-        System.out.println("Média da nota é = " + aluno2.getAlunoAprovado2());
-        System.out.println("----------------------------------------------");
-
-        Aluno aluno3 = new Aluno();
-        Aluno aluno4 = new Aluno("Maria");
-        Aluno aluno5 = new Aluno("jose",50);
+        System.out.println(aluno1.toString());
+        System.out.println("Média do Aluno = " + aluno1.getMediaNota());
+        System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
     }
 }
