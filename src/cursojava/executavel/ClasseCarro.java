@@ -2,7 +2,7 @@ package cursojava.executavel;
 
 import cursojava.classes.Carro;
 
-public class PrimeiraClasseCarro {
+public class ClasseCarro {
 
     public static void main(String[] args) {
         Carro carro = new Carro();
