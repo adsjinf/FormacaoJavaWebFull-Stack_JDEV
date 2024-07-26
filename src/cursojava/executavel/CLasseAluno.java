@@ -45,9 +45,14 @@ public class CLasseAluno {
         int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma disciplina ?");
 
         if (escolha==0){
-            int disciplinaRemover = Integer.parseInt(JOptionPane.showInputDialog("Qual o Número da Disciplina para ser removida (1, 2, 3 e 4) ?"));
-            if (disciplinaRemover>0 && disciplinaRemover<5){
-                aluno1.getDisciplinas().remove(disciplinaRemover-1);
+            int continuarRemover = 0;
+            while (continuarRemover == 0) {
+                int disciplinaRemover = Integer.parseInt(JOptionPane.showInputDialog("Qual o Número da Disciplina para ser removida (1, 2, 3 e 4) ?"));
+                if (disciplinaRemover > 0 && disciplinaRemover <= aluno1.getDisciplinas().size()) {
+                    aluno1.getDisciplinas().remove(disciplinaRemover - 1);
+                } else {
+                    JOptionPane.showInternalMessageDialog(null,"Disciplina informada não incontrada");
+                }
             }
         }
 
