@@ -134,6 +134,17 @@ public class Aluno {
         }
 
     }
+
+    public String getListaDisciplinas(){
+        String listaDisciplinas = "";
+        int contador=1;
+        for (Disciplina disciplinas : disciplinas){
+            listaDisciplinas = listaDisciplinas + contador + " - "  +  disciplinas.getDisciplina() + ", ";
+            contador++;
+        }
+        return listaDisciplinas;
+    }
+
     public String getAlunoAprovado2() {
         double media = this.getMediaNota();
         if (media >= 50 ){

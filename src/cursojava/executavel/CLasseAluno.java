@@ -4,6 +4,7 @@ import cursojava.classes.Aluno;
 import cursojava.classes.Disciplina;
 
 import javax.swing.*;
+import java.util.List;
 
 public class CLasseAluno {
     public static void main(String[] args) {
@@ -46,14 +47,19 @@ public class CLasseAluno {
 
         if (escolha==0){
             int continuarRemover = 0;
-            while (continuarRemover == 0 || !aluno1.getDisciplinas().isEmpty()) {
-                int disciplinaRemover = Integer.parseInt(JOptionPane.showInputDialog("Qual o Número da Disciplina para ser removida (1, 2, 3 e 4) ?"));
+            while (continuarRemover == 0) {
+
+                int disciplinaRemover = Integer.parseInt(JOptionPane.showInputDialog("Qual o Número da Disciplina para ser removida " + aluno1.getListaDisciplinas() + " ?"));
                 if (disciplinaRemover <= aluno1.getDisciplinas().size()) {
                     aluno1.getDisciplinas().remove(disciplinaRemover - 1);
                 } else {
                     JOptionPane.showInternalMessageDialog(null,"Disciplina informada não incontrada");
                 }
-                continuarRemover = JOptionPane.showConfirmDialog(null, "Deseja continuar removendo disciplina ?");
+                if (aluno1.getDisciplinas().size()>0){
+                    continuarRemover = JOptionPane.showConfirmDialog(null, "Deseja continuar removendo disciplina ?");
+                }else {
+                    continuarRemover=1;
+                }
             }
         }
 
