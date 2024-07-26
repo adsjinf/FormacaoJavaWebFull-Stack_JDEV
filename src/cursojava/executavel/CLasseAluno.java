@@ -81,7 +81,8 @@ public class CLasseAluno {
                 System.out.println(disciplina.getDisciplina() +"= " + disciplina.getNota());
             }
             System.out.println("-------------------------------------------------------------------------------");
-            System.out.println("Resultado = " + (aluno.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
+//            System.out.println("Resultado = " + (aluno.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
+            System.out.println("Resultado = " + aluno.getAlunoAprovado2());
             System.out.println("-------------------------------------------------------------------------------");
         }
 
