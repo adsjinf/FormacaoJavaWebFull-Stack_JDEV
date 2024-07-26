@@ -75,15 +75,18 @@ public class CLasseAluno {
         }
 
         for (Aluno aluno : alunos){
-            System.out.println(aluno.toString());
-            System.out.println("Média do Aluno = " + aluno.getMediaNota());
-            for (Disciplina disciplina : aluno.getDisciplinas()){
-                System.out.println(disciplina.getDisciplina() +"= " + disciplina.getNota());
-            }
-            System.out.println("-------------------------------------------------------------------------------");
+            if (aluno.getNome().equalsIgnoreCase("José")){
+                System.out.println(aluno.toString());
+                System.out.println("Média do Aluno = " + aluno.getMediaNota());
+                for (Disciplina disciplina : aluno.getDisciplinas()){
+                    System.out.println(disciplina.getDisciplina() +"= " + disciplina.getNota());
+                }
+                System.out.println("-------------------------------------------------------------------------------");
 //            System.out.println("Resultado = " + (aluno.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
-            System.out.println("Resultado = " + aluno.getAlunoAprovado2());
-            System.out.println("-------------------------------------------------------------------------------");
+                System.out.println("Resultado = " + aluno.getAlunoAprovado2());
+                System.out.println("-------------------------------------------------------------------------------");
+                break;
+            }
         }
 
     }
