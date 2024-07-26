@@ -171,6 +171,7 @@ public class Aluno {
                 ", dataMatricula='" + dataMatricula + '\'' +
                 ", nomeEscola='" + nomeEscola + '\'' +
                 ", serieMatriculado='" + serieMatriculado + '\'' +
+                ", Matemática='" + disciplinas.toString() + '\'' +
                 '}';
     }
 
