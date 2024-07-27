@@ -81,6 +81,8 @@ public class CLasseAluno {
         for (Aluno aluno : alunos) {
             String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do aluno deseja exibir dados " + nomeAlunos + " ?");
             if (aluno.getNome().equalsIgnoreCase(nomeAluno)) {
+                  alunos.remove(aluno);
+            } else {
                 System.out.println(aluno.toString());
                 System.out.println("Média do Aluno = " + aluno.getMediaNota());
                 for (Disciplina disciplina : aluno.getDisciplinas()) {
