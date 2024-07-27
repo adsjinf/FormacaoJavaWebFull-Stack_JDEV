@@ -77,11 +77,12 @@ public class CLasseAluno {
         for (Aluno aluno : alunos) {
             nomeAlunos = nomeAlunos + aluno.getNome() + " / ";
         }
-
+        int quantidadeAlunos = alunos.size();
         for (Aluno aluno : alunos) {
             String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do aluno deseja exibir dados " + nomeAlunos + " ?");
             if (aluno.getNome().equalsIgnoreCase(nomeAluno)) {
-                  alunos.remove(aluno);
+                alunos.remove(aluno);
+                break;
             } else {
                 System.out.println(aluno.toString());
                 System.out.println("Média do Aluno = " + aluno.getMediaNota());
@@ -92,9 +93,17 @@ public class CLasseAluno {
 //            System.out.println("Resultado = " + (aluno.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
                 System.out.println("Resultado = " + aluno.getAlunoAprovado2());
                 System.out.println("-------------------------------------------------------------------------------");
-                break;
             }
         }
-
+        if (quantidadeAlunos != alunos.size()) {
+            for (Aluno aluno : alunos) {
+                System.out.println("Alunos que sobraram na lista");
+                System.out.println(aluno.getNome());
+                System.out.println("Suas Materias são");
+                for (Disciplina disciplina : aluno.getDisciplinas()) {
+                    System.out.println(disciplina.getDisciplina());
+                }
+            }
+        }
     }
 }
