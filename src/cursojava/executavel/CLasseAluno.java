@@ -73,9 +73,14 @@ public class CLasseAluno {
             }
             alunos.add(aluno);
         }
+        String nomeAlunos = "";
+        for (Aluno aluno : alunos){
+            nomeAlunos = nomeAlunos + aluno.getNome() + ", ";
+        }
 
         for (Aluno aluno : alunos){
-            if (aluno.getNome().equalsIgnoreCase("José")){
+            String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do aluno deseja exibir dados "+ nomeAlunos +" ?");
+            if (aluno.getNome().equalsIgnoreCase(nomeAluno)){
                 System.out.println(aluno.toString());
                 System.out.println("Média do Aluno = " + aluno.getMediaNota());
                 for (Disciplina disciplina : aluno.getDisciplinas()){
