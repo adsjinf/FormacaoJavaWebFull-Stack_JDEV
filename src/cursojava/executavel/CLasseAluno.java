@@ -75,7 +75,7 @@ public class CLasseAluno {
         }
         String nomeAlunos = "";
         for (Aluno aluno : alunos){
-            nomeAlunos = nomeAlunos + aluno.getNome() + ", ";
+            nomeAlunos = nomeAlunos + aluno.getNome() + " / ";
         }
 
         for (Aluno aluno : alunos){
