@@ -13,7 +13,7 @@ public class CLasseAluno {
         List<Aluno> alunos = new ArrayList<Aluno>();
 
         for (int qtdAlunos = 0; qtdAlunos <= 1; qtdAlunos++) {
-            String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do Aluno "+ (qtdAlunos + 1) +"?");
+            String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do Aluno " + (qtdAlunos + 1) + "?");
 
 //        int idadeAluno = Integer.parseInt(JOptionPane.showInputDialog("Qual o Idade?"));
 //        String dataNascimentoAluno = JOptionPane.showInputDialog("Qual a Data de Nascimento?");
@@ -54,7 +54,7 @@ public class CLasseAluno {
 
             int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma disciplina ?");
 
-            if (escolha == JOptionPane.YES_OPTION)  {
+            if (escolha == JOptionPane.YES_OPTION) {
                 int continuarRemover = 0;
                 while (continuarRemover == 0) {
 
@@ -74,17 +74,17 @@ public class CLasseAluno {
             alunos.add(aluno);
         }
         String nomeAlunos = "";
-        for (Aluno aluno : alunos){
+        for (Aluno aluno : alunos) {
             nomeAlunos = nomeAlunos + aluno.getNome() + " / ";
         }
 
-        for (Aluno aluno : alunos){
-            String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do aluno deseja exibir dados "+ nomeAlunos +" ?");
-            if (aluno.getNome().equalsIgnoreCase(nomeAluno)){
+        for (Aluno aluno : alunos) {
+            String nomeAluno = JOptionPane.showInputDialog("Qual o Nome do aluno deseja exibir dados " + nomeAlunos + " ?");
+            if (aluno.getNome().equalsIgnoreCase(nomeAluno)) {
                 System.out.println(aluno.toString());
                 System.out.println("Média do Aluno = " + aluno.getMediaNota());
-                for (Disciplina disciplina : aluno.getDisciplinas()){
-                    System.out.println(disciplina.getDisciplina() +"= " + disciplina.getNota());
+                for (Disciplina disciplina : aluno.getDisciplinas()) {
+                    System.out.println(disciplina.getDisciplina() + "= " + disciplina.getNota());
                 }
                 System.out.println("-------------------------------------------------------------------------------");
 //            System.out.println("Resultado = " + (aluno.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
