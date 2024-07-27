@@ -103,6 +103,7 @@ public class CLasseAluno {
                 for (Disciplina disciplina : aluno.getDisciplinas()) {
                     System.out.println(disciplina.getDisciplina());
                 }
+                System.out.println("-------------------------------------------------------------------------------");
             }
         }
     }
