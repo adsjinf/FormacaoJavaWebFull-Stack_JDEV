@@ -37,20 +37,41 @@ public class CLasseAluno {
 //        aluno.setDataMatricula(dataMAtriculaAluno);
 //        aluno.setSerieMatriculado(serieAluno);
 //        aluno.setNomeEscola(nomeEscolaAluno);
-            List<String> nomeDisciplinas = new ArrayList<String>();
-            nomeDisciplinas.add("Matemática");
-            nomeDisciplinas.add("Geografia");
-            nomeDisciplinas.add("Informática");
-            nomeDisciplinas.add("Português");
-            for (String nomedisciplina : nomeDisciplinas) {
+
+            /* Usando Array */
+            String[] nomeDisciplina = new String[4];
+            nomeDisciplina[0]="Matemática";
+            nomeDisciplina[1]="Geografia";
+            nomeDisciplina[2]="Informática";
+            nomeDisciplina[3]="Português";
+
+            for (int pos=0; pos < 4;pos++) {
                 //String nomeDisciplina = JOptionPane.showInputDialog("Qual o Nome da Disciplina " + pos + " / 4 ?");
-                double notaAluno = Double.parseDouble(JOptionPane.showInputDialog("Qual a Nota da Disciplina " + nomedisciplina + " ?"));
+                double notaAluno = Double.parseDouble(JOptionPane.showInputDialog("Qual a Nota da Disciplina " + nomeDisciplina[pos].toString() + " ?"));
 
                 Disciplina disciplina = new Disciplina();
-                disciplina.setDisciplina(nomedisciplina);
+                disciplina.setDisciplina(nomeDisciplina[pos].toString());
                 disciplina.setNota(notaAluno);
                 aluno.getDisciplinas().add(disciplina);
             }
+
+            /* Usando List */
+//            List<String> nomeDisciplinas = new ArrayList<String>();
+//            nomeDisciplinas.add("Matemática");
+//            nomeDisciplinas.add("Geografia");
+//            nomeDisciplinas.add("Informática");
+//            nomeDisciplinas.add("Português");
+//
+//
+//            for (int pos=0; pos < nomeDisciplinas.size();pos++) {
+//                //String nomeDisciplina = JOptionPane.showInputDialog("Qual o Nome da Disciplina " + pos + " / 4 ?");
+//                double notaAluno = Double.parseDouble(JOptionPane.showInputDialog("Qual a Nota da Disciplina " + nomeDisciplinas.get(pos).toString() + " ?"));
+//
+//                Disciplina disciplina = new Disciplina();
+//                disciplina.setDisciplina(nomeDisciplinas.get(pos).toString());
+//                disciplina.setNota(notaAluno);
+//                aluno.getDisciplinas().add(disciplina);
+//            }
 
             int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma disciplina ?");
 
@@ -90,21 +111,20 @@ public class CLasseAluno {
                     System.out.println(disciplina.getDisciplina() + "= " + disciplina.getNota());
                 }
                 System.out.println("-------------------------------------------------------------------------------");
-//            System.out.println("Resultado = " + (aluno.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
                 System.out.println("Resultado = " + aluno.getAlunoAprovado2());
                 System.out.println("-------------------------------------------------------------------------------");
             }
         }
-        if (quantidadeAlunos != alunos.size()) {
-            for (Aluno aluno : alunos) {
-                System.out.println("Alunos que sobraram na lista");
-                System.out.println(aluno.getNome());
-                System.out.println("Suas Materias são");
-                for (Disciplina disciplina : aluno.getDisciplinas()) {
-                    System.out.println(disciplina.getDisciplina());
-                }
-                System.out.println("-------------------------------------------------------------------------------");
+        for (int pos = 0; pos < alunos.size(); pos++) {
+            Aluno aluno = alunos.get(pos);
+            System.out.println("Aluno = " + aluno.getNome());
+            System.out.println("Média do Aluno = " + aluno.getMediaNota());
+            System.out.println("Resultado = " + aluno.getAlunoAprovado2());
+            System.out.println("-------------------------------------------------------------------------------");
+            for (Disciplina disciplina : aluno.getDisciplinas()) {
+                System.out.println("Disciplina = " + disciplina.getDisciplina() + " / Nota = " + disciplina.getNota());
             }
+            System.out.println("-------------------------------------------------------------------------------");
         }
     }
 }
