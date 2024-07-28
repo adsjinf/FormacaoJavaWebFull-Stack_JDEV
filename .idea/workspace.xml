@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deded2c-0c92-4c1b-883f-71f8e60938c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cursojava/executavel/ClasseRemoverDisciplinaAluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cursojava/executavel/CLasseAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/executavel/CLasseAluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cursojava/executavel/CLasseAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/executavel/ClasseAluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +55,8 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="CLasseAluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cursojava.executavel.CLasseAluno" />
+    <configuration name="ClasseAluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cursojava.executavel.ClasseAluno" />
       <module name="FormacaoJavaWebFull-Stack_JDEV" />
       <extension name="coverage">
         <pattern>
@@ -69,7 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CLasseAluno" />
+        <item itemvalue="Application.ClasseAluno" />
       </list>
     </recent_temporary>
   </component>
