@@ -24,7 +24,6 @@ public class ClasseAluno {
         nomeDisciplinas.add("Informática");
         nomeDisciplinas.add("Português");
 
-
         while (opcaoEscolha != 0) {
             opcaoEscolha = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma das Opções (1-Novo Aluno, 2-Remover Aluno, 3-Alterar nome do Aluno, 4-Remover Disciplina, 5-Listar Alunos, 6-Listar todos Alunos e 0-Sair) ?"));
             if (opcaoEscolha == 1 || opcaoEscolha == 2 || opcaoEscolha == 4 || opcaoEscolha == 5) {
