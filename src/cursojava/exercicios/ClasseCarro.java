@@ -1,4 +1,4 @@
-package cursojava.executavel;
+package cursojava.exercicios;
 
 import cursojava.classes.Carro;
 
