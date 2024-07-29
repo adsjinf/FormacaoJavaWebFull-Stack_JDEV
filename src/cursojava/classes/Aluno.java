@@ -116,6 +116,7 @@ public class Aluno {
     public void setSerieMatriculado(String serieMatriculado) {
         this.serieMatriculado = serieMatriculado;
     }
+
     /* Metodo que retorna a média do aluno */
     public double getMediaNota(){
         double somaNotas = 0.0;
@@ -149,12 +150,12 @@ public class Aluno {
         double media = this.getMediaNota();
         if (media >= 50 ){
             if (media >= 70 ) {
-                return "Aluno está Aprovado";
+                return StatusAluno.APROVADO;
             } else {
-                return "Aluno em Recuperação";
+                return StatusAluno.RECUPERACAO;
             }
         } else {
-            return  "Aluno está Reprovado";
+            return StatusAluno.REPROVADO;
         }
     }
 
