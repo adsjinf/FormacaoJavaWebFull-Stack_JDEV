@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClasseAluno {
+public class ClasseAluno_Poo_9 {
     static List<Aluno> alunos = new ArrayList<Aluno>();
     static List<Aluno> alunosAprovados = new ArrayList<Aluno>();
     static List<Aluno> alunosRecuperacao = new ArrayList<Aluno>();
