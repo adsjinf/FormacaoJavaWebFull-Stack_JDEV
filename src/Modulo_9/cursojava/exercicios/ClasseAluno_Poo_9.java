@@ -1,8 +1,8 @@
-package cursojava.exercicios;
+package Modulo_9.cursojava.exercicios;
 
-import cursojava.classes.Aluno;
-import cursojava.classes.Disciplina;
-import cursojava.classes.StatusAluno;
+import Modulo_9.cursojava.classes.Aluno;
+import Modulo_9.cursojava.classes.Disciplina;
+import Modulo_9.cursojava.classes.StatusAluno;
 
 import javax.swing.*;
 import java.util.ArrayList;

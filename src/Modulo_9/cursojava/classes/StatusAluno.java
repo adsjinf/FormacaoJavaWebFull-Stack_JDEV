@@ -1,4 +1,4 @@
-package cursojava.classes;
+package Modulo_9.cursojava.classes;
 
 public class StatusAluno {
     public static String APROVADO = "Aprovado";

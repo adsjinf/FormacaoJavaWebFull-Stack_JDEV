@@ -1,4 +1,4 @@
-package venda;
+package Modulo_9.cursojava.venda;
 
 import java.math.BigDecimal;
 import java.util.Objects;

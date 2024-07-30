@@ -1,4 +1,4 @@
-package venda;
+package Modulo_9.cursojava.venda;
 
 import java.math.BigDecimal;
 
@@ -39,7 +39,7 @@ public class ExecutarTeste {
             System.out.println("Descição do Produto " + produto);
         }
 
-        System.out.println("Valor total da venda : " + venda.getValorTotal());
+        System.out.println("Valor total da Modulo_9.cursojava.venda : " + venda.getValorTotal());
 
     }
 }

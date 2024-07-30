@@ -1,6 +1,6 @@
-package cursojava.exercicios;
+package Modulo_9.cursojava.exercicios;
 
-import cursojava.classes.Carro;
+import Modulo_9.cursojava.classes.Carro;
 
 public class ClasseCarro {
 

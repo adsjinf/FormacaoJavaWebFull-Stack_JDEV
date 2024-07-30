@@ -1,4 +1,4 @@
-package principio.responsabilidade;
+package Modulo_9.cursojava.principio.responsabilidade;
 
 public class TesteConta {
 
