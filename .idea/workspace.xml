@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deded2c-0c92-4c1b-883f-71f8e60938c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/principio/responsabilidade/ContaBancaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/principio/responsabilidade/TesteConta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/venda/ExecutarTeste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/venda/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/venda/Venda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +81,7 @@
     "Application.CLasseAluno.executor": "Run",
     "Application.ClasseAluno.executor": "Run",
     "Application.ClasseAluno_Poo_9.executor": "Run",
+    "Application.ExecutarTeste.executor": "Run",
     "Application.PrimeiraCLasseJava.executor": "Run",
     "Application.TesteConta.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -87,13 +89,26 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TesteConta">
+  <component name="RunManager" selected="Application.ExecutarTeste">
     <configuration name="ClasseAluno_Poo_9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cursojava.exercicios.ClasseAluno_Poo_9" />
       <module name="FormacaoJavaWebFull-Stack_JDEV" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cursojava.classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecutarTeste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="venda.ExecutarTeste" />
+      <module name="FormacaoJavaWebFull-Stack_JDEV" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="venda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExecutarTeste" />
         <item itemvalue="Application.TesteConta" />
         <item itemvalue="Application.ClasseAluno_Poo_9" />
       </list>
