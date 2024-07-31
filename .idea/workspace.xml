@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deded2c-0c92-4c1b-883f-71f8e60938c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Modulo_9/venda/ExecutarTeste9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modulo_10/classe/Aluno10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modulo_10/classe/Diretor10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modulo_10/classe/Pessoa10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modulo_10/classe/Secretario10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modulo_10/exercicio/ClasseAluno10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modulo_10/classe/Disciplina10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modulo_10/classe/StatusAluno10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/classes/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/classes/Aluno9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/classes/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/classes/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/classes/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/classes/Disciplina9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/classes/StatusAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/classes/StatusAluno9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/exercicios/ClasseAluno_Poo_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/exercicios/ClasseAluno9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/exercicios/ClasseCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/exercicios/ClasseCarro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/principio/responsabilidade/ContaBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/principio/responsabilidade/ContaBancaria9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/principio/responsabilidade/TesteConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/principio/responsabilidade/TesteConta9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/venda/ExecutarTeste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/venda/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/venda/Produto9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modulo_9/cursojava/venda/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modulo_9/venda/Venda9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modulo_10/classe/Aluno10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/classe/Aluno10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modulo_10/exercicio/ClasseAluno10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/exercicio/ClasseAluno10.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,20 +77,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CLasseAluno.executor": "Run",
-    "Application.ClasseAluno.executor": "Run",
-    "Application.ClasseAluno_Poo_9.executor": "Run",
-    "Application.ExecutarTeste.executor": "Run",
-    "Application.PrimeiraCLasseJava.executor": "Run",
-    "Application.TesteConta.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CLasseAluno.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClasseAluno.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClasseAluno_Poo_9.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExecutarTeste.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrimeiraCLasseJava.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TesteConta.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.ClasseAluno9">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="modulo_10.classe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ClasseAluno10">
+    <configuration name="ClasseAluno10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="modulo_10.exercicio.ClasseAluno10" />
+      <module name="FormacaoJavaWebFull-Stack_JDEV" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="modulo_10.exercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClasseAluno9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Modulo_9.cursojava.exercicios.ClasseAluno9" />
       <module name="FormacaoJavaWebFull-Stack_JDEV" />
@@ -145,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClasseAluno10" />
         <item itemvalue="Application.ClasseAluno9" />
         <item itemvalue="Application.ExecutarTeste9" />
         <item itemvalue="Application.TesteConta9" />

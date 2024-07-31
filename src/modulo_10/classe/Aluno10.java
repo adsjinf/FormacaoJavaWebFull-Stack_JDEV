@@ -1,11 +1,28 @@
 package modulo_10.classe;
 
+import Modulo_9.classes.Disciplina9;
+import Modulo_9.classes.StatusAluno9;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Aluno10 extends Pessoa10 {
     private String dataMatricula;
     private String nomeEscola;
     private String serieMatriculado;
+
+    private List<Disciplina10> disciplinas10 = new ArrayList<Disciplina10>();
+
+
+    public void setDisciplinas(List<Disciplina10> disciplina9s) {
+        this.disciplinas10 = disciplinas10;
+    }
+
+    public List<Disciplina10> getDisciplinas() {
+        return disciplinas10;
+    }
+
 
     public String getDataMatricula() {
         return dataMatricula;
@@ -29,6 +46,47 @@ public class Aluno10 extends Pessoa10 {
 
     public void setSerieMatriculado(String serieMatriculado) {
         this.serieMatriculado = serieMatriculado;
+    }
+
+    /* Metodo que retorna a média do aluno */
+    public double getMediaNota(){
+        double somaNotas = 0.0;
+        for (Disciplina10 disciplina10 : disciplinas10){
+            somaNotas += disciplina10.getNota();
+        }
+        return somaNotas/ disciplinas10.size();
+    }
+
+    public boolean getAlunoAprovado() {
+        double media = this.getMediaNota();
+        if (media >= 70 ){
+            return true;
+        } else {
+            return  false;
+        }
+    }
+
+    public String getListaDisciplinas(){
+        String listaDisciplinas = "";
+        int contador=1;
+        for (Disciplina10 disciplinas : disciplinas10){
+            listaDisciplinas = listaDisciplinas + contador + " - "  +  disciplinas.getDisciplina() + ", ";
+            contador++;
+        }
+        return listaDisciplinas;
+    }
+
+    public String getAlunoAprovado2() {
+        double media = this.getMediaNota();
+        if (media >= 50 ) {
+            if (media >= 70) {
+                return StatusAluno10.APROVADO;
+            } else {
+                return StatusAluno10.RECUPERACAO;
+            }
+        } else {
+            return StatusAluno10.REPROVADO;
+        }
     }
 
     @Override
