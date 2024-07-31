@@ -1,4 +1,4 @@
-package Modulo_9.cursojava.classes;
+package Modulo_9.classes;
 
 public class Carro {
     public String cor;

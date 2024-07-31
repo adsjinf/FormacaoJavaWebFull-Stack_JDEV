@@ -1,9 +1,9 @@
-package Modulo_9.cursojava.classes;
+package Modulo_9.classes;
 
 import java.util.Objects;
 
 /* Essa classe Disciplina servirá para todas os objetos e instancias de notas e disciplinas (materias) */
-public class Disciplina {
+public class Disciplina9 {
     private double nota;
     private String disciplina;
 
@@ -27,7 +27,7 @@ public class Disciplina {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Disciplina that = (Disciplina) o;
+        Disciplina9 that = (Disciplina9) o;
         return Double.compare(nota, that.nota) == 0 && Objects.equals(disciplina, that.disciplina);
     }
 

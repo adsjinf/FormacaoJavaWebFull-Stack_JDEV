@@ -1,31 +1,31 @@
-package Modulo_9.cursojava.venda;
+package Modulo_9.venda;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Venda {
+public class Venda9 {
     private Long id;
     private String descricaoVenda;
     private String nomeCliente;
     private String enderecoEntrega;
     private BigDecimal valorTotal;
 
-    private List<Produto> listaProdutos = new ArrayList<Produto>();
+    private List<Produto9> listaProduto9s = new ArrayList<Produto9>();
 
-    public List<Produto> getListaProdutos() {
-        return listaProdutos;
+    public List<Produto9> getListaProdutos() {
+        return listaProduto9s;
     }
 
-    public void addProduto(Produto produto) {
-        this.listaProdutos.add(produto);
+    public void addProduto(Produto9 produto9) {
+        this.listaProduto9s.add(produto9);
     }
 
     private double totalVenda(){
         double total = 0.0;
-        for (Produto produto : listaProdutos){
-            total += produto.getValor().doubleValue();
+        for (Produto9 produto9 : listaProduto9s){
+            total += produto9.getValor().doubleValue();
         }
         return  total;
     }
@@ -75,8 +75,8 @@ public class Venda {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Venda venda = (Venda) o;
-        return Objects.equals(id, venda.id) && Objects.equals(descricaoVenda, venda.descricaoVenda) && Objects.equals(nomeCliente, venda.nomeCliente) && Objects.equals(enderecoEntrega, venda.enderecoEntrega) && Objects.equals(valorTotal, venda.valorTotal);
+        Venda9 venda9 = (Venda9) o;
+        return Objects.equals(id, venda9.id) && Objects.equals(descricaoVenda, venda9.descricaoVenda) && Objects.equals(nomeCliente, venda9.nomeCliente) && Objects.equals(enderecoEntrega, venda9.enderecoEntrega) && Objects.equals(valorTotal, venda9.valorTotal);
     }
 
     @Override
@@ -92,7 +92,7 @@ public class Venda {
                 ", nomeCliente='" + nomeCliente + '\'' +
                 ", enderecoEntrega='" + enderecoEntrega + '\'' +
                 ", valorTotal=" + valorTotal +
-                ", listaProdutos=" + listaProdutos +
+                ", listaProdutos=" + listaProduto9s +
                 '}';
     }
 }

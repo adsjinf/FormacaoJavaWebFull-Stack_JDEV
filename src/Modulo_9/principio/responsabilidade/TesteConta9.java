@@ -1,9 +1,9 @@
-package Modulo_9.cursojava.principio.responsabilidade;
+package Modulo_9.principio.responsabilidade;
 
-public class TesteConta {
+public class TesteConta9 {
 
     public static void main(String[] arqs) {
-        ContaBancaria bancaria = new ContaBancaria();
+        ContaBancaria9 bancaria = new ContaBancaria9();
         bancaria.setDescicao("Conta do José");
         System.out.println(bancaria);
         bancaria.dimui100Reais();

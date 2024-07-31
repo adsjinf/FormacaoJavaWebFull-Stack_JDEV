@@ -1,11 +1,11 @@
-package Modulo_9.cursojava.classes;
+package Modulo_9.classes;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 /* Está é nossa classe/objeto que representa o Aluno */
-public class Aluno {
+public class Aluno9 {
 
     private String nome;
     private int idade;
@@ -18,23 +18,23 @@ public class Aluno {
     private String nomeEscola;
     private String serieMatriculado;
 
-    private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+    private List<Disciplina9> disciplina9s = new ArrayList<Disciplina9>();
 
-    public void setDisciplinas(List<Disciplina> disciplinas) {
-        this.disciplinas = disciplinas;
+    public void setDisciplinas(List<Disciplina9> disciplina9s) {
+        this.disciplina9s = disciplina9s;
     }
 
-    public List<Disciplina> getDisciplinas() {
-        return disciplinas;
+    public List<Disciplina9> getDisciplinas() {
+        return disciplina9s;
     }
 
-    public Aluno() {}
+    public Aluno9() {}
 
-    public Aluno(String nomePadrao){
+    public Aluno9(String nomePadrao){
         nome = nomePadrao;
     }
 
-    public Aluno(String nomePadrao, int idadePadrao) {
+    public Aluno9(String nomePadrao, int idadePadrao) {
         nome = nomePadrao;
         idade = idadePadrao;
     }
@@ -120,10 +120,10 @@ public class Aluno {
     /* Metodo que retorna a média do aluno */
     public double getMediaNota(){
         double somaNotas = 0.0;
-        for (Disciplina disciplina : disciplinas){
-            somaNotas += disciplina.getNota();
+        for (Disciplina9 disciplina9 : disciplina9s){
+            somaNotas += disciplina9.getNota();
         }
-        return somaNotas/disciplinas.size();
+        return somaNotas/ disciplina9s.size();
     }
 
     public boolean getAlunoAprovado() {
@@ -139,7 +139,7 @@ public class Aluno {
     public String getListaDisciplinas(){
         String listaDisciplinas = "";
         int contador=1;
-        for (Disciplina disciplinas : disciplinas){
+        for (Disciplina9 disciplinas : disciplina9s){
             listaDisciplinas = listaDisciplinas + contador + " - "  +  disciplinas.getDisciplina() + ", ";
             contador++;
         }
@@ -150,12 +150,12 @@ public class Aluno {
         double media = this.getMediaNota();
         if (media >= 50 ) {
             if (media >= 70) {
-                return StatusAluno.APROVADO;
+                return StatusAluno9.APROVADO;
             } else {
-                return StatusAluno.RECUPERACAO;
+                return StatusAluno9.RECUPERACAO;
             }
         } else {
-            return StatusAluno.REPROVADO;
+            return StatusAluno9.REPROVADO;
         }
     }
 
@@ -172,7 +172,7 @@ public class Aluno {
                 ", dataMatricula='" + dataMatricula + '\'' +
                 ", nomeEscola='" + nomeEscola + '\'' +
                 ", serieMatriculado='" + serieMatriculado + '\'' +
-                ", Matemática='" + disciplinas.toString() + '\'' +
+                ", Matemática='" + disciplina9s.toString() + '\'' +
                 '}';
     }
 
@@ -180,8 +180,8 @@ public class Aluno {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Aluno aluno = (Aluno) o;
-        return Objects.equals(nome, aluno.nome) && Objects.equals(numeroCpf, aluno.numeroCpf);
+        Aluno9 aluno9 = (Aluno9) o;
+        return Objects.equals(nome, aluno9.nome) && Objects.equals(numeroCpf, aluno9.numeroCpf);
     }
 
     @Override

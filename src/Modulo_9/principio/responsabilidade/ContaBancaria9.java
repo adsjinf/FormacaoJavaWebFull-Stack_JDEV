@@ -1,6 +1,6 @@
-package Modulo_9.cursojava.principio.responsabilidade;
+package Modulo_9.principio.responsabilidade;
 
-public class ContaBancaria {
+public class ContaBancaria9 {
 
     private String descicao;
     private double saldo = 8000;

@@ -1,9 +1,9 @@
-package Modulo_9.cursojava.venda;
+package Modulo_9.venda;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Produto {
+public class Produto9 {
     private Long id;
     private String nome;
     private BigDecimal valor;
@@ -36,8 +36,8 @@ public class Produto {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Produto produto = (Produto) o;
-        return Objects.equals(id, produto.id) && Objects.equals(nome, produto.nome) && Objects.equals(valor, produto.valor);
+        Produto9 produto9 = (Produto9) o;
+        return Objects.equals(id, produto9.id) && Objects.equals(nome, produto9.nome) && Objects.equals(valor, produto9.valor);
     }
 
     @Override
