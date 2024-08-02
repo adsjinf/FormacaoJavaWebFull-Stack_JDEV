@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deded2c-0c92-4c1b-883f-71f8e60938c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modulo_10/classe/Disciplina10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modulo_10/classe/StatusAluno10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modulo_10/classe/Aluno10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/classe/Aluno10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modulo_10/exercicio/ClasseAluno10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/exercicio/ClasseAluno10.java" afterDir="false" />
@@ -77,19 +75,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CLasseAluno.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClasseAluno.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClasseAluno_Poo_9.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExecutarTeste.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PrimeiraCLasseJava.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TesteConta.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CLasseAluno.executor": "Run",
+    "Application.ClasseAluno.executor": "Run",
+    "Application.ClasseAluno10.executor": "Run",
+    "Application.ClasseAluno_Poo_9.executor": "Run",
+    "Application.ExecutarTeste.executor": "Run",
+    "Application.PrimeiraCLasseJava.executor": "Run",
+    "Application.TesteConta.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="modulo_10.classe" />

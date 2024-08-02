@@ -1,8 +1,5 @@
 package modulo_10.classe;
 
-import Modulo_9.classes.Disciplina9;
-import Modulo_9.classes.StatusAluno9;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

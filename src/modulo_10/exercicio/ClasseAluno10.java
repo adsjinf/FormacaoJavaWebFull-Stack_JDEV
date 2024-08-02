@@ -85,15 +85,16 @@ public class ClasseAluno10 {
 
         Aluno10 aluno10 = new Aluno10();
         aluno10.setNome(nomeAluno);
-//        aluno.setIdade(idadeAluno);
-//        aluno.setDataNascimento(dataNascimentoAluno);
-//        aluno.setRegistroGeral(registroGeralAluno);
-//        aluno.setNumeroCpf(cpfAluno);
-//        aluno.setNomeMae(nomeMaeAluno);
-//        aluno.setNomePai(nomePaiAluno);
-//        aluno.setDataMatricula(dataMAtriculaAluno);
-//        aluno.setSerieMatriculado(serieAluno);
-//        aluno.setNomeEscola(nomeEscolaAluno);
+        
+//        aluno10.setIdade(idadeAluno);
+//        aluno10.setDataNascimento(dataNascimentoAluno);
+//        aluno10.setRegistroGeral(registroGeralAluno);
+//        aluno10.setNumeroCpf(cpfAluno);
+//        aluno10.setNomeMae(nomeMaeAluno);
+//        aluno10.setNomePai(nomePaiAluno);
+//        aluno10.setDataMatricula(dataMAtriculaAluno);
+//        aluno10.setSerieMatriculado(serieAluno);
+//        aluno10.setNomeEscola(nomeEscolaAluno);
 
         /* Usando Array */
 //            String[] nomeDisciplina = new String[4];
@@ -106,10 +107,10 @@ public class ClasseAluno10 {
 //                //String nomeDisciplina = JOptionPane.showInputDialog("Qual o Nome da Disciplina " + pos + " / 4 ?");
 //                double notaAluno = Double.parseDouble(JOptionPane.showInputDialog("Qual a Nota da Disciplina " + nomeDisciplina[pos].toString() + " ?"));
 //
-//                Disciplina disciplina = new Disciplina();
-//                disciplina.setDisciplina(nomeDisciplina[pos].toString());
-//                disciplina.setNota(notaAluno);
-//                aluno.getDisciplinas().add(disciplina);
+//                Disciplina10 disciplina10 = new Disciplina10();
+//                disciplina10.setDisciplina(nomeDisciplina[pos].toString());
+//                disciplina10.setNota(notaAluno);
+//                aluno10.getDisciplinas().add(disciplina10);
 //            }
 
         for (int pos = 0; pos < nomeDisciplinas.size(); pos++) {
