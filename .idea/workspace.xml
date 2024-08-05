@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deded2c-0c92-4c1b-883f-71f8e60938c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modulo_10/exercicio/TestandoClasseFilho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_29_07_2024_00_14__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,26 +75,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CLasseAluno.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClasseAluno.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClasseAluno10.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClasseAluno_Poo_9.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExecutarTeste.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PrimeiraCLasseJava.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TesteConta.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CLasseAluno.executor": "Run",
+    "Application.ClasseAluno.executor": "Run",
+    "Application.ClasseAluno10.executor": "Run",
+    "Application.ClasseAluno_Poo_9.executor": "Run",
+    "Application.ExecutarTeste.executor": "Run",
+    "Application.PrimeiraCLasseJava.executor": "Run",
+    "Application.TestandoClasseFilho.executor": "Run",
+    "Application.TesteConta.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="modulo_10.classe" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClasseAluno10">
+  <component name="RunManager" selected="Application.TestandoClasseFilho">
     <configuration name="ClasseAluno10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="modulo_10.exercicio.ClasseAluno10" />
       <module name="FormacaoJavaWebFull-Stack_JDEV" />
@@ -132,6 +135,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestandoClasseFilho" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="modulo_10.exercicio.TestandoClasseFilho" />
+      <module name="FormacaoJavaWebFull-Stack_JDEV" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="modulo_10.exercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TesteConta9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Modulo_9.cursojava.principio.responsabilidade.TesteConta9" />
       <module name="FormacaoJavaWebFull-Stack_JDEV" />
@@ -147,6 +163,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestandoClasseFilho" />
         <item itemvalue="Application.ClasseAluno10" />
         <item itemvalue="Application.ClasseAluno9" />
         <item itemvalue="Application.ExecutarTeste9" />
