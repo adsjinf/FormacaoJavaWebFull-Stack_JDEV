@@ -92,4 +92,8 @@ public class Pessoa10 {
                 ", nomeMae='" + nomeMae + '\'' +
                 '}';
     }
+
+    public boolean pessoaMaiorIdade(){
+        return idade>=18;
+    }
 }

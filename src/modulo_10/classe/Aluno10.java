@@ -115,4 +115,14 @@ public class Aluno10 extends Pessoa10 {
                 ", serieMatriculado='" + serieMatriculado + '\'' +
                 '}';
     }
+
+
+    @Override /* Rescreve a classe com nova rotina */
+    public boolean pessoaMaiorIdade() {
+        return idade >= 21;
+    }
+
+    public String msgMaiorIdade(){
+        return this.pessoaMaiorIdade() ? "Obaa aluno é maior de idade" : "Ixii vc é menor de idade";
+    }
 }
