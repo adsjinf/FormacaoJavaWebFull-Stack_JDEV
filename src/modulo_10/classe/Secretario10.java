@@ -1,11 +1,16 @@
 package modulo_10.classe;
 
+import modulo_10.interfaces.PermitirAcesso;
+
 import java.util.Objects;
 
-public class Secretario10 extends Pessoa10 {
+public class Secretario10 extends Pessoa10 implements PermitirAcesso {
     private String registro;
     private String nivelCargo;
     private String experiencia;
+
+    private String login;
+    private String senha;
 
     public String getRegistro() {
         return registro;
@@ -29,6 +34,22 @@ public class Secretario10 extends Pessoa10 {
 
     public void setExperiencia(String experiencia) {
         this.experiencia = experiencia;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     @Override
@@ -64,5 +85,11 @@ public class Secretario10 extends Pessoa10 {
                 ", nivelCargo='" + nivelCargo + '\'' +
                 ", experiencia='" + experiencia + '\'' +
                 '}';
+    }
+
+    /* Esse é o metodo do contrato de autenticação */
+    @Override
+    public boolean autenticar() {
+        return login.equals("admin") && senha.equals("admin"); /* Retorna true caso login e senha seja admin senão false */
     }
 }

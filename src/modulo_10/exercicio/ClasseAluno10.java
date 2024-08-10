@@ -2,6 +2,7 @@ package modulo_10.exercicio;
 
 import modulo_10.classe.Aluno10;
 import modulo_10.classe.Disciplina10;
+import modulo_10.classe.Secretario10;
 import modulo_10.classe.StatusAluno10;
 
 import javax.swing.*;
@@ -16,50 +17,63 @@ public class ClasseAluno10 {
 
     @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
-        int opcaoEscolha = 9;
-        String nomeAluno = "";
-        String novoNomeAluno = "";
-        String nomeDisciplina="";
-        String opcaoDisciplinas="";
 
-        /* Usando List */
-        nomeDisciplinas.add("Matemática");
-        nomeDisciplinas.add("Geografia");
-        nomeDisciplinas.add("Informática");
-        nomeDisciplinas.add("Português");
+        String login = JOptionPane.showInputDialog("Informe o Login");
+        String senha = JOptionPane.showInputDialog("Informe a Senha");
 
-        /* Usando HashMap */
-        maps.put(StatusAluno10.APROVADO, new ArrayList<Aluno10>());
-        maps.put(StatusAluno10.RECUPERACAO, new ArrayList<Aluno10>());
-        maps.put(StatusAluno10.REPROVADO, new ArrayList<Aluno10>());
+        Secretario10 secretario10 = new Secretario10();
+        secretario10.setLogin(login);
+        secretario10.setSenha(senha);
+        if (secretario10.autenticar()){
 
-        while (opcaoEscolha != 0) {
-            opcaoEscolha = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma das Opções (1-Novo Aluno, 2-Remover Aluno, 3-Alterar nome do Aluno, 4-Remover Disciplina, 5-Listar Alunos, 6-Listar todos Alunos, 7-Listar Alunos Status e 0-Sair) ?"));
-            if (opcaoEscolha == 1 || opcaoEscolha == 2 || opcaoEscolha == 4 || opcaoEscolha == 5) {
-                nomeAluno = JOptionPane.showInputDialog("Informe Nome do aluno ?");
-            }
-            if (opcaoEscolha == 1) {
-                NovoAluno(nomeAluno);
-            } else if (opcaoEscolha == 2) {
-                RemoverAluno(nomeAluno);
-            } else if (opcaoEscolha == 3) {
-                nomeAluno = JOptionPane.showInputDialog("Informe Nome do aluno que será alterado?");
-                novoNomeAluno = JOptionPane.showInputDialog("Informe o Novo Nome do aluno para ser alterado ?");
-                AlterarNomeAluno(nomeAluno, novoNomeAluno);
-            } else if (opcaoEscolha == 4) {
-                for (int pos = 0; pos<4; pos++){
-                    opcaoDisciplinas = opcaoDisciplinas + nomeDisciplinas.get(pos).toString() + " / ";
+            int opcaoEscolha = 9;
+            String nomeAluno = "";
+            String novoNomeAluno = "";
+            String nomeDisciplina="";
+            String opcaoDisciplinas="";
+
+            /* Usando List */
+            nomeDisciplinas.add("Matemática");
+            nomeDisciplinas.add("Geografia");
+            nomeDisciplinas.add("Informática");
+            nomeDisciplinas.add("Português");
+
+            /* Usando HashMap */
+            maps.put(StatusAluno10.APROVADO, new ArrayList<Aluno10>());
+            maps.put(StatusAluno10.RECUPERACAO, new ArrayList<Aluno10>());
+            maps.put(StatusAluno10.REPROVADO, new ArrayList<Aluno10>());
+
+            while (opcaoEscolha != 0) {
+                opcaoEscolha = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma das Opções (1-Novo Aluno, 2-Remover Aluno, 3-Alterar nome do Aluno, 4-Remover Disciplina, 5-Listar Alunos, 6-Listar todos Alunos, 7-Listar Alunos Status e 0-Sair) ?"));
+                if (opcaoEscolha == 1 || opcaoEscolha == 2 || opcaoEscolha == 4 || opcaoEscolha == 5) {
+                    nomeAluno = JOptionPane.showInputDialog("Informe Nome do aluno ?");
                 }
-                nomeDisciplina = JOptionPane.showInputDialog("Informe o Nome da Disciplina para ser removida (" + opcaoDisciplinas + ") ?");
-                RemoverDisciplinaAluno(nomeAluno, nomeDisciplina);
-            } else if (opcaoEscolha == 5) {
-                ListarAluno(nomeAluno);
-            } else if (opcaoEscolha == 6) {
-                ListarTodosAlunos();
-            } else if (opcaoEscolha == 7) {
-                ListarTodosAlunosStatus();
+                if (opcaoEscolha == 1) {
+                    NovoAluno(nomeAluno);
+                } else if (opcaoEscolha == 2) {
+                    RemoverAluno(nomeAluno);
+                } else if (opcaoEscolha == 3) {
+                    nomeAluno = JOptionPane.showInputDialog("Informe Nome do aluno que será alterado?");
+                    novoNomeAluno = JOptionPane.showInputDialog("Informe o Novo Nome do aluno para ser alterado ?");
+                    AlterarNomeAluno(nomeAluno, novoNomeAluno);
+                } else if (opcaoEscolha == 4) {
+                    for (int pos = 0; pos<4; pos++){
+                        opcaoDisciplinas = opcaoDisciplinas + nomeDisciplinas.get(pos).toString() + " / ";
+                    }
+                    nomeDisciplina = JOptionPane.showInputDialog("Informe o Nome da Disciplina para ser removida (" + opcaoDisciplinas + ") ?");
+                    RemoverDisciplinaAluno(nomeAluno, nomeDisciplina);
+                } else if (opcaoEscolha == 5) {
+                    ListarAluno(nomeAluno);
+                } else if (opcaoEscolha == 6) {
+                    ListarTodosAlunos();
+                } else if (opcaoEscolha == 7) {
+                    ListarTodosAlunosStatus();
+                }
             }
+        } else {
+            JOptionPane.showMessageDialog(null,"Acesso não permitido");
         }
+
     }
 
     public static void RemoverAluno(String nomeAluno) {
