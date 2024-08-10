@@ -2,6 +2,7 @@ package modulo_10.exercicio;
 
 import modulo_10.classe.Aluno10;
 import modulo_10.classe.Diretor10;
+import modulo_10.classe.Pessoa10;
 import modulo_10.classe.Secretario10;
 
 public class TestandoClasseFilho {
@@ -21,6 +22,7 @@ public class TestandoClasseFilho {
         Secretario10 secretario = new Secretario10();
         secretario.setExperiencia("Administração");
         secretario.setNumeroCPF("457457457-45");
+        secretario.setNome("João");
         secretario.setIdade(18);
 
         System.out.println(aluno);
@@ -37,5 +39,19 @@ public class TestandoClasseFilho {
 
         /* erro provocado por criar uma classe abstrata */
 //        Pessoa10 pessoa10 = new Pessoa10();
+
+        /*
+          Polimorfismo é um dos pilares fundamentais da programação orientada a objetos (POO) e refere-se à capacidade
+          de um objeto de assumir várias formas. Em Java, o polimorfismo permite que uma única ação seja realizada de
+          diferentes maneiras, dependendo do tipo de objeto que a invoca. Existem dois tipos principais de polimorfismo
+          em Java: o polimorfismo em tempo de compilação e o polimorfismo em tempo de execução.
+        */
+        teste(aluno);
+        teste(diretor);
+        teste(secretario);
+    }
+
+    public static void  teste(Pessoa10 pessoa10){
+        System.out.println("Essa pessoa é demais = " + pessoa10.getNome() + " e o salário é = " + pessoa10.salario());
     }
 }
