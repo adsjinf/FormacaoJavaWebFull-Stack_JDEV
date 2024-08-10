@@ -21,10 +21,7 @@ public class ClasseAluno10 {
         String login = JOptionPane.showInputDialog("Informe o Login");
         String senha = JOptionPane.showInputDialog("Informe a Senha");
 
-        Secretario10 secretario10 = new Secretario10();
-        secretario10.setLogin(login);
-        secretario10.setSenha(senha);
-        if (secretario10.autenticar()){
+        if (new Secretario10().autenticar(login, senha)){
 
             int opcaoEscolha = 9;
             String nomeAluno = "";
