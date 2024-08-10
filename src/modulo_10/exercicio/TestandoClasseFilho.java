@@ -30,5 +30,8 @@ public class TestandoClasseFilho {
         System.out.println(aluno.pessoaMaiorIdade() + " - " + aluno.msgMaiorIdade());
         System.out.println(diretor.pessoaMaiorIdade());
         System.out.println(secretario.pessoaMaiorIdade());
+
+        /* erro provocado por criar uma classe abstrata */
+//        Pessoa10 pessoa10 = new Pessoa10();
     }
 }

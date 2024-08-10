@@ -2,7 +2,7 @@ package modulo_10.classe;
 
 import java.util.Objects;
 
-public class Pessoa10 {
+public abstract class Pessoa10 {
     protected String nome;
     protected int idade;
     protected String  dataNascimento;
