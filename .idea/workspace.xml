@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deded2c-0c92-4c1b-883f-71f8e60938c1" name="Changes" comment="" />
+    <list default="true" id="1deded2c-0c92-4c1b-883f-71f8e60938c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modulo_10/classe/Aluno10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/classe/Aluno10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modulo_10/classe/Diretor10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/classe/Diretor10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modulo_10/classe/Pessoa10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/classe/Pessoa10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modulo_10/classe/Secretario10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/classe/Secretario10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modulo_10/exercicio/TestandoClasseFilho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modulo_10/exercicio/TestandoClasseFilho.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

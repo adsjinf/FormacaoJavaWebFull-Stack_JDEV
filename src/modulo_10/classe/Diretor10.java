@@ -32,6 +32,11 @@ public class Diretor10 extends Pessoa10{
     }
 
     @Override
+    public double salario() {
+        return 3900.70;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
