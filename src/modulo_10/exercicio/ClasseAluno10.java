@@ -4,6 +4,7 @@ import modulo_10.classe.Aluno10;
 import modulo_10.classe.Disciplina10;
 import modulo_10.classe.Secretario10;
 import modulo_10.classe.StatusAluno10;
+import modulo_10.interfaces.PermitirAcesso;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -21,8 +22,9 @@ public class ClasseAluno10 {
         String login = JOptionPane.showInputDialog("Informe o Login");
         String senha = JOptionPane.showInputDialog("Informe a Senha");
 
+        PermitirAcesso permitirAcesso = new Secretario10(login, senha);
 
-        if (new Secretario10().autenticar(login, senha)){
+        if (permitirAcesso.autenticar()){
 
             int opcaoEscolha = 9;
             String nomeAluno = "";
